@@ -7,7 +7,7 @@ export const NewsBoard = ({category}) => {
   useEffect(() => {
     const fetchArticles = async () => {
       try {
-        const url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${import.meta.env.VITE_API_KEY}`;
+        const url = `https://gnews.io/api/v4/top-headlines?category=${category}&lang=en&country=us&max=10&apikey=3ab1f6f5e49bbb998eaf81ba5a5d7e8d`;
         const response = await fetch(url);
         const data = await response.json();
         setArticles(data.articles);
