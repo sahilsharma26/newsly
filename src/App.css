@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa; /* Light gray background */
+  color: #212529; /* Dark text color */
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #dee2e6; /* Light border for the bottom of the navbar */
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  margin-right: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff6f61; /* Accent color for hover effect */
+}
+
+/* Latest News Section */
+h2 {
+  font-size: 2rem;
+  color: #343a40; /* Darker text color for headers */
+  margin-bottom: 20px;
+}
+
+.badge.bg-danger {
+  background-color: #dc3545; /* Bootstrap danger color */
+  color: #ffffff; /* White text for badge */
+}
+
+/* NewsBoard Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px; /* Ensure padding for better layout */
+}
+
+/* NewsItem Styles */
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #343a40; /* Dark background for cards */
+  border: 1px solid #495057; /* Border color for cards */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Increased hover effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  border-bottom: 2px solid #495057; /* Slightly darker border for image */
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff; /* White text for card titles */
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #e9ecef; /* Light gray for card text */
+  margin-bottom: 15px; /* Space before the button */
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    font-size: 0.875rem;
+    margin-right: 10px;
+  }
+
+  .container {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+
+  .card {
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+}
